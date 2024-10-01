@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cgpgocy82at0e"
-path="res://.godot/imported/Flerbert.blend-5457abace947e4ba3b61ea01fc1ef023.scn"
+path="res://.godot/imported/Flerbert.blend-2bd279bbcb2915a710f372b9067e13ac.scn"
 
 [deps]
 
-source_file="res://Flerbert.blend"
-dest_files=["res://.godot/imported/Flerbert.blend-5457abace947e4ba3b61ea01fc1ef023.scn"]
+source_file="res://Models/Flerbert.blend"
+dest_files=["res://.godot/imported/Flerbert.blend-2bd279bbcb2915a710f372b9067e13ac.scn"]
 
 [params]
 
