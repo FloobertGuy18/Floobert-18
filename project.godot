@@ -13,3 +13,26 @@ config_version=5
 config/name="Floobert 18"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=384
+window/size/viewport_height=324
+window/size/window_width_override=768
+window/size/window_height_override=648
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
+
+[file_customization]
+
+folder_colors={
+"res://Fonts/": "yellow",
+"res://Models/": "orange",
+"res://Scenes/": "red",
+"res://Scripts/": "blue",
+"res://Shaders/": "gray",
+"res://Sounds/": "pink",
+"res://Textures/": "green",
+"res://Videos/": "purple",
+"res://addons/": "teal"
+}
