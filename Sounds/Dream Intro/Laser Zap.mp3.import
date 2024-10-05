@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c453thj28f8yv"
+path="res://.godot/imported/Laser Zap.mp3-b166f1f1c237dafd00f7148e5beba549.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Dream Intro/Laser Zap.mp3"
+dest_files=["res://.godot/imported/Laser Zap.mp3-b166f1f1c237dafd00f7148e5beba549.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

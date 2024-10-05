@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsnde1we11q7l"
+path="res://.godot/imported/Level Intro Jingle.mp3-ce608f5a1dc2c795a52ff5b48fdc3ccf.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Level Intro/Level Intro Jingle.mp3"
+dest_files=["res://.godot/imported/Level Intro Jingle.mp3-ce608f5a1dc2c795a52ff5b48fdc3ccf.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

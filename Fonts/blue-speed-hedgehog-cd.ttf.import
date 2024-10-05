@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://clg4rc61dtbt4"
-path="res://.godot/imported/Khand-Light.ttf-e98d72ca7f937be5b38b8f5a7454ef69.fontdata"
+uid="uid://bdtq8p5nxwtsh"
+path="res://.godot/imported/blue-speed-hedgehog-cd.ttf-e4944fd57b19b7bbef963f96b842415c.fontdata"
 
 [deps]
 
-source_file="res://Fonts/Khand-Light.ttf"
-dest_files=["res://.godot/imported/Khand-Light.ttf-e98d72ca7f937be5b38b8f5a7454ef69.fontdata"]
+source_file="res://Fonts/blue-speed-hedgehog-cd.ttf"
+dest_files=["res://.godot/imported/blue-speed-hedgehog-cd.ttf-e4944fd57b19b7bbef963f96b842415c.fontdata"]
 
 [params]
 

@@ -1,0 +1,168 @@
+[gd_scene load_steps=11 format=3 uid="uid://fp4url4v2i3k"]
+
+[ext_resource type="Script" path="res://Scripts/Level Intro/level_intro.gd" id="1_5wsge"]
+[ext_resource type="Texture2D" uid="uid://fmou2gn0jxsx" path="res://Textures/Level Intro/Lower.png" id="1_40mbq"]
+[ext_resource type="FontFile" uid="uid://bdtq8p5nxwtsh" path="res://Fonts/blue-speed-hedgehog-cd.ttf" id="2_i35bs"]
+[ext_resource type="Texture2D" uid="uid://bg4pqsb1hnrxg" path="res://Textures/Level Intro/Right.png" id="2_rn7h8"]
+[ext_resource type="AudioStream" uid="uid://bsnde1we11q7l" path="res://Sounds/Level Intro/Level Intro Jingle.mp3" id="5_xl346"]
+
+[sub_resource type="Animation" id="Animation_wkhnb"]
+resource_name = "Full Open"
+length = 2.0
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Right:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(-116, 162), Vector2(-195, 162)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lower:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(192, 427), Vector2(192, 481)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Level Name:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(60, 191), Vector2(-218, 324)]
+}
+
+[sub_resource type="Animation" id="Animation_op287"]
+resource_name = "Half Open"
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Right:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5, 1),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(192, 162), Vector2(-116, 162)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lower:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(0.5, -2),
+"update": 0,
+"values": [Vector2(192, 162), Vector2(192, 427)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Level Name:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector2(-221, 191), Vector2(60, 191)]
+}
+
+[sub_resource type="Animation" id="Animation_mkowg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Right:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(192, 162)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Lower:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(192, 162)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Level Name:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-221, 191)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4vf4c"]
+_data = {
+"Full Open": SubResource("Animation_wkhnb"),
+"Half Open": SubResource("Animation_op287"),
+"RESET": SubResource("Animation_mkowg")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_jphed"]
+font = ExtResource("2_i35bs")
+font_size = 36
+outline_size = 15
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Level Intro" type="CanvasLayer"]
+script = ExtResource("1_5wsge")
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_4vf4c")
+}
+
+[node name="Level Name" type="Label" parent="."]
+texture_filter = 1
+offset_left = -218.0
+offset_top = 324.0
+offset_right = 1.0
+offset_bottom = 403.0
+text = "Level Dream"
+label_settings = SubResource("LabelSettings_jphed")
+
+[node name="Right" type="Sprite2D" parent="."]
+position = Vector2(192, 162)
+texture = ExtResource("2_rn7h8")
+
+[node name="Lower" type="Sprite2D" parent="."]
+position = Vector2(192, 162)
+texture = ExtResource("1_40mbq")
+
+[node name="LevelIntroJingle" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_xl346")
