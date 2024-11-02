@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://cho2jdl4ruyfo"]
+
+[ext_resource type="Script" path="res://Scripts/Dream Tutorial/im_dead.gd" id="1_svr2a"]
+[ext_resource type="VideoStream" path="res://Videos/Dream Tutorial/Death.ogv" id="1_v7alv"]
+[ext_resource type="Shader" path="res://Shaders/Vhs.gdshader" id="2_no3ce"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5yv75"]
+shader = ExtResource("2_no3ce")
+shader_parameter/wiggle = 0.03
+shader_parameter/wiggle_speed = 25.0
+shader_parameter/smear = 1.0
+shader_parameter/blur_samples = 15
+
+[node name="IM DEAD" type="Node2D"]
+script = ExtResource("1_svr2a")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.199994, 0.297795)
+stream = ExtResource("1_v7alv")
+autoplay = true
+
+[node name="VHS" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="VHS"]
+material = SubResource("ShaderMaterial_5yv75")
+offset_right = 384.0
+offset_bottom = 324.0

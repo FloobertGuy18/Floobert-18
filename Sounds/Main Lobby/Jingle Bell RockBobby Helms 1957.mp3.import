@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c1utaqmn8ei2n"
+path="res://.godot/imported/Jingle Bell RockBobby Helms 1957.mp3-0f87b73ec8c7357d27000ccbda6e233c.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Main Lobby/Jingle Bell RockBobby Helms 1957.mp3"
+dest_files=["res://.godot/imported/Jingle Bell RockBobby Helms 1957.mp3-0f87b73ec8c7357d27000ccbda6e233c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

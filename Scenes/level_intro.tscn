@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://fmou2gn0jxsx" path="res://Textures/Level Intro/Lower.png" id="1_40mbq"]
 [ext_resource type="FontFile" uid="uid://bdtq8p5nxwtsh" path="res://Fonts/blue-speed-hedgehog-cd.ttf" id="2_i35bs"]
 [ext_resource type="Texture2D" uid="uid://bg4pqsb1hnrxg" path="res://Textures/Level Intro/Right.png" id="2_rn7h8"]
-[ext_resource type="AudioStream" uid="uid://bsnde1we11q7l" path="res://Sounds/Level Intro/Level Intro Jingle.mp3" id="5_xl346"]
+[ext_resource type="AudioStream" uid="uid://bsnde1we11q7l" path="res://Sounds/Level Intro Jingle.mp3" id="5_xl346"]
 
 [sub_resource type="Animation" id="Animation_wkhnb"]
 resource_name = "Full Open"

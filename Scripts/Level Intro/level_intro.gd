@@ -5,7 +5,7 @@ extends CanvasLayer
 @export var Lower_Strand_Color : Color
 
 @export_category("Stats")
-@export var Level_Name : String
+@export var Level_Name = ""
 
 func _ready():
 	$Right.self_modulate = Right_Strand_Color

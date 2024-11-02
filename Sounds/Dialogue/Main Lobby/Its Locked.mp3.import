@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ceuoo15tp3eps"
+path="res://.godot/imported/Its Locked.mp3-f533f5dd0eedc0ab2ab1cc0903e8f558.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Dialogue/Main Lobby/Its Locked.mp3"
+dest_files=["res://.godot/imported/Its Locked.mp3-f533f5dd0eedc0ab2ab1cc0903e8f558.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
