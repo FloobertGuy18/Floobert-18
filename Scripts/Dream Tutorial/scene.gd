@@ -1,7 +1,5 @@
 extends Node3D
 
-GlobalVars.Level_Name = "Dream Sequence"
-
 func _on_button_pressed() -> void:
 	$Map/Forcefield/LaserZap.play()
 	$Map/Forcefield.position -= Vector3(0,50,0)

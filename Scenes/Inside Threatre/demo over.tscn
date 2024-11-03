@@ -1,0 +1,39 @@
+[gd_scene load_steps=5 format=3 uid="uid://j4xtw3a7jhoo"]
+
+[ext_resource type="FontFile" uid="uid://cyieh8504l8i0" path="res://Fonts/sonic-cd-font-c.ttf" id="1_rel6a"]
+[ext_resource type="Shader" path="res://Shaders/Vhs.gdshader" id="2_xa2b1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fbks4"]
+font = ExtResource("1_rel6a")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tlsqm"]
+shader = ExtResource("2_xa2b1")
+shader_parameter/wiggle = 0.2
+shader_parameter/wiggle_speed = 5.0
+shader_parameter/smear = 2.0
+shader_parameter/blur_samples = 7
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_top = 219.0
+offset_right = 94.0
+offset_bottom = 242.0
+text = "DEMO OVER"
+label_settings = SubResource("LabelSettings_fbks4")
+
+[node name="VHS" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="VHS"]
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(0.925551, 0.467795)
+text = "hi"
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="VHS"]
+material = SubResource("ShaderMaterial_tlsqm")
+offset_right = 384.0
+offset_bottom = 324.0
+color = Color(1, 1, 1, 0)
+metadata/_edit_use_anchors_ = true

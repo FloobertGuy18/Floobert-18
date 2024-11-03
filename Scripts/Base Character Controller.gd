@@ -10,6 +10,7 @@ signal Camera_Unlock
 @export_enum("Walking", "Running", "Climbing") var State 
 @export_category("Sets")
 @export var Locked = false
+@export var Flash_Light = false
 
 @onready var Neck = $Neck
 @onready var Camera = $Neck/Camera3D
@@ -55,7 +56,9 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, 0.5)
 	
 	move_and_slide()
-
+	
+	$Neck/Camera3D/SpotLight3D.visible = Flash_Light
+	
 func camera_look_at(Pos : Vector3):
 	Neck.look_at(Pos)
 	await Camera_Unlock

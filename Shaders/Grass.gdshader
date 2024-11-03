@@ -71,7 +71,7 @@ void fragment( )
 		);
 		new_color.a *= float( -0.995 < hit.y && hit.y < 0.0 );
 		NORMAL = mix(
-			( INV_CAMERA_MATRIX * WORLD_MATRIX * 
+			( INV_CAMERA_MATRIX * WORLD_MATRIX *
 			vec4(
 				- float( id == 0 ) + float( id == 1 )
 			,	0.0

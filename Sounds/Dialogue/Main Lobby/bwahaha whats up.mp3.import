@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://63p8ybcajxam"
+path="res://.godot/imported/bwahaha whats up.mp3-84a89d0d3b2b9c12827eb7c75449727b.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Dialogue/Main Lobby/bwahaha whats up.mp3"
+dest_files=["res://.godot/imported/bwahaha whats up.mp3-84a89d0d3b2b9c12827eb7c75449727b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

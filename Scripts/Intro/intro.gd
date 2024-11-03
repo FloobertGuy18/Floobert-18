@@ -24,10 +24,12 @@ func change_scene():
 	$Label.text = "LOADING .VEGA"
 	
 	await get_tree().create_timer(4).timeout
+	$SubViewport/Cartridge.play("Insert")
 	$Label.text = "LOADED"
 	$Sounds/Intro.stop()
 	$Sounds/MenuButton.play()
 	
+	await $SubViewport/Cartridge.animation_finished
 	await get_tree().create_timer(1).timeout
 	
 	$Fade/AnimationPlayer.play("Fade")
@@ -39,3 +41,4 @@ func change_scene():
 	
 	await get_tree().create_timer(2).timeout
 	
+	get_tree().change_scene_to_file("res://Scenes/Dream Tutorial/Scene.scn")

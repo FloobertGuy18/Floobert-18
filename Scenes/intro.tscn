@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://cni61tlbhxkhs"]
+
+[ext_resource type="Script" path="res://Scripts/intro.gd" id="1_bbdax"]
+[ext_resource type="Shader" path="res://Shaders/Vhs.gdshader" id="1_f3owg"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v82aa"]
+shader = ExtResource("1_f3owg")
+shader_parameter/wiggle = 0.2
+shader_parameter/wiggle_speed = 5.0
+shader_parameter/smear = 2.0
+shader_parameter/blur_samples = 7
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_bbdax")
+
+[node name="VHS" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="VHS"]
+material = SubResource("ShaderMaterial_v82aa")
+offset_right = 384.0
+offset_bottom = 324.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 384.0
+offset_bottom = 324.0
+color = Color(0, 0, 0, 1)
+
+[node name="LineEdit" type="LineEdit" parent="."]
+offset_left = 98.0
+offset_top = 144.0
+offset_right = 271.0
+offset_bottom = 175.0
+placeholder_text = "Instert Code"
+alignment = 1
+
+[connection signal="text_submitted" from="LineEdit" to="." method="_on_line_edit_text_submitted"]
